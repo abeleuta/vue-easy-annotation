@@ -1,0 +1,73 @@
+{
+    "private": false,
+    "name": "vue-easy-annotation",
+    "version": "1.0.4",
+    "description": "Vue plugin for EasyAnnotation library",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "scripts": {
+        "dev1": "vue serve src/components/EasyAnnotation.vue",
+        "build": "webpack --mode production"
+    },
+    "keywords": [
+        "vue",
+        "plugin",
+        "easy-annotation",
+        "annotation",
+        "javascript",
+        "annotation"
+    ],
+    "author": "EasyAnnotation",
+    "license": "MIT",
+    "dependencies": {
+        "@babel/polyfill": "~7.2",
+        "easyannotation": "^1.0.6",
+        "vue": "~2.6",
+        "vue-router": "~3.0",
+        "webpack-node-externals": "^2.5.2"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "rules": {
+            "no-unused-vars": "off",
+            "no-unused-finally": "off",
+            "no-unsafe-finally": "off",
+            "no-redeclare": "off",
+            "no-cond-assign": "off",
+            "no-mixed-spaces-and-tabs": "off",
+            "no-useless-escape": "off",
+            "no-console": "off",
+            "no-undef": "off",
+            "no-empty": "off"
+        }
+    },
+    "devDependencies": {
+        "@babel/core": "^7.11.6",
+        "babel-loader": "^8.1.0",
+        "vue-loader": "^15.9.3",
+        "@vue/cli-plugin-babel": "^4.5.6",
+        "@vue/cli-service": "^4.5.6",
+        "vue-template-compiler": "^2.6.12",
+        "html-webpack-plugin": "^4.5.0",
+        "webpack": "^4.44.2",
+        "cross-env": "~5.2",
+        "webpack-dev-server": "^3.11.0",
+        "webpack-cli": "^3.3.12"
+    },
+    "resolve": {
+        "extensions": [
+            ".js",
+            ".vue"
+        ]
+    }
+}
